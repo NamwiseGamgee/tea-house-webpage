@@ -1,54 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea house</title>
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/cc6ace2d9f.js" crossorigin="anonymous"></script>
-    <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                dark01: '#1C1C1C',
-                dark03: '#777777',
-                star: '#FFC850',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea house</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/cc6ace2d9f.js" crossorigin="anonymous"></script>
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            dark01: '#1C1C1C',
+            dark03: '#777777',
+            star: '#FFC850',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
-<body>
-    <header class="flex mt-16">
-        <div>
-            <h1 class="text-7xl text-cyan">It's always good <br>time for a <br>tea</h1>
-            <p class="text-dark03 my-8">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Suscipit, magnam.</p>
-            <button class="rounded-xl py-4 pl-4 text-xl font-bold text-white bg-gradient-to-r from-[#FF8938] to-[#FF0000]">Explore More <img class="inline pl-3 pr-5 py-5" src="images/arrow.png" alt=""></button>
-        </div>
-        <div>
-            <img src="images/banner.png" alt="">
-            <div>
-                <div>
-                    <i class="text-star fa-solid fa-star"></i>
-                </div>
-                <div>
-                    <h1>5.00</h1>
-                    <p>Trust Pilot Ratings</p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
 
-    </main>
-    <footer>
-        
-    </footer>
+<body>
+  <header class="flex mt-16 mb-32 justify-center">
+    <div>
+       <h1 class="text-5xl text-dark01">It's always good <br>time for a <br>tea</h1>
+      <p class="text-dark03 my-8">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Suscipit, magnam.</p>
+      <button
+        class="rounded-xl py-3 pl-4 text-xl font-bold text-white bg-gradient-to-r from-[#FF8938] to-[#FF0000]">Explore
+        More <img class="inline pl-3 pr-5 py-5" src="images/arrow.png" alt=""></button>
+    </div>
+    <div>
+      <img src="images/banner.png" alt="">
+      <div
+        class="w-64 h-24 relative bottom-24 left-24 flex py-5 px-6 justify-center items-center bg-white drop-shadow-2xl rounded-xl">
+        <div>
+          <i class="mr-3 text-star fa-solid fa-star"></i>
+        </div>
+        <div>
+          <h1 class="text-3xl text-dark01">5.00</h1>
+          <p class="text-base text-dark03">Trust Pilot Ratings</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="text-center justify-center mb-32">
+      <h1 class="text-5xl text-dark01 mb-5">Our Featured Products</h1>
+      <p class="text-base text-dark03 mb-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+        inventore impedit <br>tempora molestias vitae? Amet soluta fugiat illum porro quod.</p>
+        <div>
+          <div class="justify-center flex gap-6">
+            <div class="bg-[#F4F4F4] rounded-xl">
+              <img class="mb-7 my-7 mx-16" src="images/tea-1.png" alt="">
+              <h1 class="mb-2 text-2xl font-extrabold text-dark01">Milk Tea</h1>
+              <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="bg-[#F4F4F4] rounded-xl">
+              <img class="mb-7 my-7 mx-16" src="images/tea-2.png" alt="">
+              <h1 class="mb-2 text-2xl font-extrabold text-dark01">Black Tea</h1>
+              <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="bg-[#F4F4F4] rounded-xl">
+              <img class="mb-7 my-7 mx-16" src="images/tea-3.png" alt="">
+              <h1 class="mb-2 text-2xl font-extrabold text-dark01">Lemon Tea</h1>
+              <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="bg-[#F4F4F4] rounded-xl">
+              <img class="mb-7 my-7 mx-16" src="images/tea-4.png" alt="">
+              <h1 class="mb-2 text-2xl font-extrabold text-dark01">Green Tea</h1>
+              <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="mb-32 flex justify-center gap-14">
+      <div class="grid grid-rows-3 grid-cols-2 gap-7">
+        <div class="rounded-xl bg-gradient-to-r from-[#ff00005d] to-[#ff883805]">
+          
+        </div>
+        <div class="rounded-xl bg-[rgba(230,166,35,0.1)] row-span-2">
+          <img class="pl-7 pr-7 pt-14" src="images/fresh-1.png" alt="">
+        </div>
+        <div class="rounded-xl row-span-2 bg-[rgba(87,118,57,0.1)]">
+          <img class="px-10 py-10" src="images/fresh-2.png" alt="">
+        </div>
+        <div class="rounded-xl bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF]">
+          
+        </div>
+      </div>
+      <div>
+        <h1 class="text-5xl text-dark01 font-extrabold">Great Tea, Freshly <br>Presented</h1>
+        <p class="mb-7 mt-5 text-base text-dark03 font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores <br> praesentium modi facere nam quaerat accusantium molestiae incidunt, enim <br> perferendis expedita ut dolorem molestias id quidem. Voluptatum aliquid iure <br>quo facere!</p>
+        <h2 class="mb-3 text-dark01 text-xl font-extrabold">Unique Taste</h2>
+        <p class="mb-5 text-base text-dark03 font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique commodi <br>nesciunt eaque molestias omnis dolorum sint, tenetur modi laborum nisi!</p>
+        <h2 class="mb-3 text-dark01 text-xl font-extrabold">Premium Quality</h2>
+        <p class="text-base text-dark03 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quia molestiae <br>est beatae corporis consectetur.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
