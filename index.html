@@ -34,7 +34,7 @@
 </head>
 
 <body>
-  <header class="flex mt-16 mb-28 justify-center">
+  <header class="md:flex mt-16 mb-28 justify-center">
     <div>
       <h1 class="text-5xl text-dark01">It's always good <br>time for a <br>tea</h1>
       <p class="text-dark03 my-8">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Suscipit, magnam.</p>
@@ -45,7 +45,7 @@
     <div>
       <img src="images/banner.png" alt="">
       <div
-        class="w-64 h-24 relative bottom-24 left-24 flex py-5 px-6 justify-center items-center bg-white drop-shadow-2xl rounded-xl">
+        id="rating-btn" class="w-64 h-24 relative bottom-24 left-24 flex py-5 px-6 justify-center items-center bg-white drop-shadow-2xl rounded-xl">
         <div>
           <i class="mr-3 text-star fa-solid fa-star"></i>
         </div>
@@ -57,28 +57,29 @@
     </div>
   </header>
   <main>
+    <!-- featured products section -->
     <section class="text-center justify-center mb-32">
       <h1 class="text-5xl text-dark01 mb-5">Our Featured Products</h1>
       <p class="text-base text-dark03 mb-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
         inventore impedit <br>tempora molestias vitae? Amet soluta fugiat illum porro quod.</p>
       <div>
-        <div class="justify-center flex gap-6">
-          <div class="bg-[#F4F4F4] rounded-xl">
-            <img class="mb-7 my-7 mx-16" src="images/tea-1.png" alt="">
+        <div class="justify-center lg:flex gap-6">
+          <div class="bg-[#F4F4F4] featured-products rounded-xl">
+            <img class="lg:mb-7 my-7 mx-16" src="images/tea-1.png" alt="">
             <h1 class="mb-2 text-2xl font-extrabold text-dark01">Milk Tea</h1>
             <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
           </div>
-          <div class="bg-[#F4F4F4] rounded-xl">
+          <div class="bg-[#F4F4F4] featured-products rounded-xl">
             <img class="mb-7 my-7 mx-16" src="images/tea-2.png" alt="">
             <h1 class="mb-2 text-2xl font-extrabold text-dark01">Black Tea</h1>
             <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
           </div>
-          <div class="bg-[#F4F4F4] rounded-xl">
+          <div class="bg-[#F4F4F4] featured-products rounded-xl">
             <img class="mb-7 my-7 mx-16" src="images/tea-3.png" alt="">
             <h1 class="mb-2 text-2xl font-extrabold text-dark01">Lemon Tea</h1>
             <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
           </div>
-          <div class="bg-[#F4F4F4] rounded-xl">
+          <div class="bg-[#F4F4F4] featured-products rounded-xl">
             <img class="mb-7 my-7 mx-16" src="images/tea-4.png" alt="">
             <h1 class="mb-2 text-2xl font-extrabold text-dark01">Green Tea</h1>
             <p class="px-7 pb-7 font-semibold text-base text-dark03">Lorem ipsum dolor sit amet.</p>
@@ -86,10 +87,10 @@
         </div>
       </div>
     </section>
-    <section class="items-center mb-32 flex justify-center gap-14">
+    <section class="items-center mb-32 lg:flex justify-center gap-14">
       <div class="grid grid-rows-3 grid-cols-2 gap-7">
-        <div class="rounded-xl bg-gradient-to-r from-[#ff00005d] to-[#ff883805]">
-
+        <div class="rounded-xl col-span-1 bg-gradient-to-r from-[#ff00005d] to-[#ff883805]">
+           
         </div>
         <div class="rounded-xl bg-[rgba(230,166,35,0.1)] row-span-2">
           <img class="pl-7 pr-7 pt-14" src="images/fresh-1.png" alt="">
@@ -116,8 +117,8 @@
     </section>
     <!-- clients section -->
     <section class="mb-32 bg-gradient-to-l from-[#FF0000] to-[#FF8938] rounded-xl text-center mx-auto"
-      style="width: 1140px; height: 650px;">
-      <div class="flex gap-32 justify-center items-center" style="height: 650px;">
+      style=" height: 650px;">
+      <div class="lg:flex gap-32 justify-center items-center" style="height: 650px;">
         <div class="bg-no-repeat ml-16 mr-28">
           <h1 class="mb-5 text-5xl font-extrabold text-dark07">Meet Our Super <br>Clients</h1>
           <p class="mb-7 text-base font-medium text-dark07">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.
@@ -126,8 +127,8 @@
             All</button>
           <img class="absolute w-80 h-80 -translate-y-44 translate-x-80 opacity-20" src="images/cup.png" alt="">
         </div>
-        <div class="mr-16 text-left w-96" style="background-image: url('');">
-          <div class="grid grid-cols-1 grid-rows-2 gap-10">
+        <div class="mr-16 text-left w-96">
+          <div class="sm:hidden lg:grid grid-cols-1 grid-rows-2 gap-10">
             <div>
               <div class="rounded-xl bg-[#FFFFFF] opacity-25">
                 <img class="rounded-full border-2 border-white relative bottom-6 right-6" src="images/client.png"
@@ -227,8 +228,8 @@
       </div>
       <div>
         <h1 class="text-xl font-semibold text-dark01 pb-5">Subscribe to our <br>newsletter</h1>
-        <input class="rounded-lg px-3 py-2" type="email" name="" id="" placeholder="Email Address">
-        <i class="ml-4 bg-orange-600 p-2 rounded-lg fa-solid fa-arrow-right"></i>
+        <input class="rounded-lg px-3 py-2" type="email" name="" id="input-field" placeholder="Type 'email'">
+        <button id="arrow" class="ml-4  p-2 rounded-lg " disabled><i class="fa-solid fa-arrow-right"></i></button>
         <div>
           <ul class="flex gap-6 mt-12">
             <li><a href="http://"><i class="fa-brands fa-facebook"></i></a></li>
@@ -240,6 +241,10 @@
     </div>
     <p>Copyrights Reserved@2023</p>
   </footer>
+
+
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
